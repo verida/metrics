@@ -1,0 +1,22 @@
+name: Fetch latest testnet DID counrt
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '22 0/12 * * *'
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v3
+    - name: Fetch and write data
+      run: |-
+        export ACTIVEDIDS=`curl https://data.verida.network/network/testnet/stats | jq .activeDIDs`
+        TZ=UTC printf "%(%F %T)T, %d\n" $EPOCHSECONDS $ACTIVEDIDS >> network/testnet/stats.csv
+    - name: Commit and push if it changed
+      uses: stefanzweifel/git-auto-commit-action@v4

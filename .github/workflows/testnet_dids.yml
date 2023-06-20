@@ -16,6 +16,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Fetch and write data
       run: |-
+        git pull
         export ACTIVEDIDS=`curl https://data.verida.network/network/testnet/stats | jq .activeDIDs`
         TZ=UTC printf "%(%F %T)T, %d\n" $EPOCHSECONDS $ACTIVEDIDS >> network/testnet/stats.csv
     - name: Commit and push if it changed

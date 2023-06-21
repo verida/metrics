@@ -31,7 +31,7 @@ jobs:
           destination_dir: 'metrics'
     - name: Invalidate Cloudfront
       uses: chetan/invalidate-cloudfront-action@v2
-      with:
+      env:
         DISTRIBUTION: "E3LHLBYD4D78TS"
         PATHS: '/metrics/*'
         AWS_REGION: 'us-west-2'

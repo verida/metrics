@@ -1,4 +1,4 @@
-name: Fetch latest testnet DID count
+name: Fetch testnet stoage node metrics
 
 on:
   workflow_dispatch:

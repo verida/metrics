@@ -1,4 +1,4 @@
-name: Fetch testnet stoage node metrics
+name: Fetch testnet storage node metrics
 
 on:
   workflow_dispatch:

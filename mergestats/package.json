@@ -1,0 +1,21 @@
+{
+  "name": "mergestats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Verida",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "process": "yarn build && node build/index.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.4.0",
+    "dayjs": "^1.11.9"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@typescript-eslint/parser": "^5.59.2",
+    "typescript": "^5.0.4"
+  }
+}

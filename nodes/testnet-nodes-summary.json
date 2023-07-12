@@ -1,0 +1,98 @@
+[
+  {
+    "id": "verida-testnet-aws-us-east-2-001",
+    "country": "United States of America",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "currentUserContexts": "3263",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-aws-us-east-2-002",
+    "country": "United States of America",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "currentUserContexts": "3242",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-aws-us-east-2-003",
+    "country": "United States of America",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "currentUserContexts": "3182",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-ap-southeast-2-001",
+    "country": "Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "currentUserContexts": "2689",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-ap-southeast-2-002",
+    "country": "Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "currentUserContexts": "2817",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-ap-southeast-2-003",
+    "country": "Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "currentUserContexts": "2790",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-europe-west-001",
+    "country": "Switzerland",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "currentUserContexts": "7368",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-europe-west-002",
+    "country": "Switzerland",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "currentUserContexts": "7383",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-europe-west-003",
+    "country": "Switzerland",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "currentUserContexts": "7345",
+    "maxUserContexts": "20000"
+  },
+  {
+    "id": "verida-testnet-asia-001",
+    "country": "Singapore",
+    "region": "Asia",
+    "subregion": "South-eastern Asia",
+    "currentUserContexts": "15594",
+    "maxUserContexts": "25000"
+  },
+  {
+    "id": "verida-testnet-asia-002",
+    "country": "Indonesia",
+    "region": "Asia",
+    "subregion": "South-eastern Asia",
+    "currentUserContexts": "15637",
+    "maxUserContexts": "25000"
+  },
+  {
+    "id": "verida-testnet-asia-003",
+    "country": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "currentUserContexts": "13942",
+    "maxUserContexts": "25000"
+  }
+]

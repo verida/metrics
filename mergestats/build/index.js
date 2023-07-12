@@ -53,6 +53,10 @@ function run() {
                     const mostRecentNodeStats = nodeStats.pop();
                     results.push({
                         id: node.id,
+                        name: node.name,
+                        description: node.description,
+                        datacenter: node.datacenter,
+                        serviceEndpoint: node.serviceEndpoint,
                         country: nodeCountryData["name"],
                         region: nodeCountryData["region"],
                         subregion: nodeCountryData["sub-region"],

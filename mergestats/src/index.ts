@@ -23,6 +23,18 @@ type CountryRegion = {
   "sub-region-code": number;
   "intermediate-region-code": number;
 };
+type NodeSummaryData = {
+  id: string;
+  name: string;
+  description: string;
+  datacenter: string;
+  serviceEndpoint: string;
+  country: string;
+  region: string;
+  subregion: string;
+  currentUserContexts: number;
+  maxUserContexts: number;
+};
 
 
 async function run(): Promise<void> {
@@ -56,7 +68,7 @@ async function run(): Promise<void> {
 
     let domainRegEx = new RegExp('https:\\/\\/(.*):\\d*');
 
-    const results: any = [];
+    const results: NodeSummaryData[] = [];
     for (const node of storageNodes) {
       const nodeCountryData = countryData[node.countryLocation];
 
@@ -73,6 +85,10 @@ async function run(): Promise<void> {
 
         results.push({
           id: node.id,
+          name: node.name,
+          description: node.description,
+          datacenter: node.datacenter,
+          serviceEndpoint: node.serviceEndpoint,
           country: nodeCountryData["name"],
           region: nodeCountryData["region"],
           subregion: nodeCountryData["sub-region"],

@@ -47,6 +47,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version-file: '.nvmrc'
+        cache: yarn
+        cache-dependency-path: './mergestats/yarn.lock'
+        
     - name: Merge Node Stats
       run: |
         yarn install

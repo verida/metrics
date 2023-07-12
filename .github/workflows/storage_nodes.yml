@@ -44,6 +44,16 @@ jobs:
         done
 
         git add .
+    - uses: actions/setup-node@v3
+      with:
+        node-version-file: '.nvmrc'
+        cache: yarn
+    - name: Merge Node Stats
+      run: |
+        yarn install
+        yarn build && yarn run process
+        git add ../nodes/*.json
+      working-directory: ./mergestats
     - name: Commit and push if it changed
       uses: stefanzweifel/git-auto-commit-action@v4
     - name: Upload to S3

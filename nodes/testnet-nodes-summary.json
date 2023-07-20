@@ -8,7 +8,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3588",
+    "currentUserContexts": "3598",
     "maxUserContexts": "20000"
   },
   {
@@ -20,7 +20,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3513",
+    "currentUserContexts": "3517",
     "maxUserContexts": "20000"
   },
   {
@@ -32,7 +32,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3465",
+    "currentUserContexts": "3473",
     "maxUserContexts": "20000"
   },
   {
@@ -44,7 +44,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "2878",
+    "currentUserContexts": "2884",
     "maxUserContexts": "20000"
   },
   {
@@ -56,7 +56,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "3069",
+    "currentUserContexts": "3074",
     "maxUserContexts": "20000"
   },
   {
@@ -68,7 +68,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "3003",
+    "currentUserContexts": "3005",
     "maxUserContexts": "20000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9061",
+    "currentUserContexts": "9066",
     "maxUserContexts": "20000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9145",
+    "currentUserContexts": "9154",
     "maxUserContexts": "20000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9068",
+    "currentUserContexts": "9080",
     "maxUserContexts": "20000"
   },
   {
@@ -116,7 +116,19 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "currentUserContexts": "17672",
+    "currentUserContexts": "17714",
+    "maxUserContexts": "25000"
+  },
+  {
+    "id": "verida-testnet-asia-004",
+    "name": "Verida Foundation Testnet: GCP (Singapore) 004",
+    "description": "Node operated by the Verida Foundation on Testnet",
+    "datacenter": "gcp-asia-southeast-1a",
+    "serviceEndpoint": "https://node2-ase1sg.gcp.acacia.verida.tech:443/",
+    "country": "Singapore",
+    "region": "Asia",
+    "subregion": "South-eastern Asia",
+    "currentUserContexts": "30",
     "maxUserContexts": "25000"
   },
   {
@@ -128,7 +140,7 @@
     "country": "Indonesia",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "currentUserContexts": "17072",
+    "currentUserContexts": "17120",
     "maxUserContexts": "25000"
   },
   {
@@ -140,7 +152,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "currentUserContexts": "16086",
+    "currentUserContexts": "16130",
     "maxUserContexts": "25000"
   }
 ]

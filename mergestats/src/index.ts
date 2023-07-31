@@ -32,8 +32,8 @@ type NodeSummaryData = {
   country: string;
   region: string;
   subregion: string;
-  currentUserContexts: number;
-  maxUserContexts: number;
+  storageSlotsUsed: number;
+  maxStorageSlots: number;
 };
 
 
@@ -92,8 +92,8 @@ async function run(): Promise<void> {
           country: nodeCountryData["name"],
           region: nodeCountryData["region"],
           subregion: nodeCountryData["sub-region"],
-          currentUserContexts: mostRecentNodeStats['current_users'],
-          maxUserContexts: mostRecentNodeStats['max_users'],
+          storageSlotsUsed: mostRecentNodeStats['storage_slots_used'],
+          maxStorageSlots: mostRecentNodeStats['max_storage_slots'],
         });
       }
     }

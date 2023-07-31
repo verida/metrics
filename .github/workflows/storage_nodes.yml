@@ -26,8 +26,8 @@ jobs:
           echo $STRIPPED_FINAL_SLASH
           JSON=`curl --max-time 5 --silent "$STRIPPED_FINAL_SLASH/status"`
           echo $JSON
-          CURRENT_USERS=`echo $JSON | jq .results.currentUsers`
-          MAX_USERS=`echo $JSON | jq .results.maxUsers`
+          STORAGE_SLOTS_USED=`echo $JSON | jq .results.storageSlotsUsed`
+          MAX_USERS=`echo $JSON | jq .results.maxStorageSlots`
         
           DOMAIN_NAME=`echo $ENDPOINT | sed -E -e 's_.*://([^/@]*@)?([^/:]+).*_\2_'` # get the domainname
         
@@ -36,7 +36,7 @@ jobs:
         
           if [ ! -f "./nodes/$DOMAIN_NAME/stats.csv" ]; then
             # the CSV doesn't exist, so create it and add the header
-            echo "datetime_utc,current_users,max_users" > "./nodes/$DOMAIN_NAME/stats.csv"
+            echo "datetime_utc,storage_slots_used,max_storage_slots" > "./nodes/$DOMAIN_NAME/stats.csv"
           fi
         
           # append stats to the CSV

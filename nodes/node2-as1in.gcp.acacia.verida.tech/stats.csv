@@ -1,4 +1,4 @@
-datetime_utc,current_users,max_users
+datetime_utc,storage_slots_used,max_storage_slots
 2023-07-28 06:00:29, 25, 25000
 2023-07-28 12:44:40, 935, 25000
 2023-07-29 00:55:36, 1447, 25000

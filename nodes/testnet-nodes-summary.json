@@ -8,8 +8,8 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "4019",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-aws-us-east-2-002",
@@ -20,8 +20,8 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3927",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-aws-us-east-2-003",
@@ -32,8 +32,8 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3878",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-ap-southeast-2-001",
@@ -44,8 +44,8 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3196",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-ap-southeast-2-002",
@@ -56,8 +56,8 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3418",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-ap-southeast-2-003",
@@ -68,8 +68,8 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3374",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-europe-west-001",
@@ -80,8 +80,8 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "9660",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-europe-west-002",
@@ -92,8 +92,8 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "9719",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-europe-west-003",
@@ -104,8 +104,8 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "20000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "9701",
+    "maxStorageSlots": "20000"
   },
   {
     "id": "verida-testnet-asia-001",
@@ -116,8 +116,8 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "25000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "21673",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-testnet-asia-004",
@@ -128,8 +128,8 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "25000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "3618",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-testnet-asia-002",
@@ -140,8 +140,8 @@
     "country": "Indonesia",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "25000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "21659",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-testnet-asia-003",
@@ -152,8 +152,8 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "25000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "21751",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-testnet-asia-005",
@@ -164,7 +164,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "25000",
-    "maxStorageSlots": "0"
+    "storageSlotsUsed": "4279",
+    "maxStorageSlots": "25000"
   }
 ]

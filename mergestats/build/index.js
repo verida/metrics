@@ -60,8 +60,8 @@ function run() {
                         country: nodeCountryData["name"],
                         region: nodeCountryData["region"],
                         subregion: nodeCountryData["sub-region"],
-                        currentUserContexts: mostRecentNodeStats['current_users'],
-                        maxUserContexts: mostRecentNodeStats['max_users'],
+                        storageSlotsUsed: mostRecentNodeStats['storage_slots_used'],
+                        maxStorageSlots: mostRecentNodeStats['max_storage_slots'],
                     });
                 }
             }

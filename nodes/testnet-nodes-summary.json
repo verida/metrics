@@ -8,7 +8,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3990",
+    "currentUserContexts": "4019",
     "maxUserContexts": "20000"
   },
   {
@@ -20,7 +20,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3895",
+    "currentUserContexts": "3926",
     "maxUserContexts": "20000"
   },
   {
@@ -32,7 +32,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "currentUserContexts": "3836",
+    "currentUserContexts": "3877",
     "maxUserContexts": "20000"
   },
   {
@@ -44,7 +44,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "3154",
+    "currentUserContexts": "3194",
     "maxUserContexts": "20000"
   },
   {
@@ -56,7 +56,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "3382",
+    "currentUserContexts": "3417",
     "maxUserContexts": "20000"
   },
   {
@@ -68,7 +68,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "currentUserContexts": "3336",
+    "currentUserContexts": "3373",
     "maxUserContexts": "20000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9577",
+    "currentUserContexts": "9650",
     "maxUserContexts": "20000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9644",
+    "currentUserContexts": "9709",
     "maxUserContexts": "20000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "currentUserContexts": "9619",
+    "currentUserContexts": "9693",
     "maxUserContexts": "20000"
   },
   {
@@ -116,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "currentUserContexts": "21066",
+    "currentUserContexts": "21661",
     "maxUserContexts": "25000"
   },
   {
@@ -128,7 +128,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "currentUserContexts": "3041",
+    "currentUserContexts": "3604",
     "maxUserContexts": "25000"
   },
   {
@@ -140,7 +140,7 @@
     "country": "Indonesia",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "currentUserContexts": "21042",
+    "currentUserContexts": "21644",
     "maxUserContexts": "25000"
   },
   {
@@ -152,7 +152,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "currentUserContexts": "20612",
+    "currentUserContexts": "21727",
     "maxUserContexts": "25000"
   },
   {
@@ -164,7 +164,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "currentUserContexts": "3189",
+    "currentUserContexts": "4259",
     "maxUserContexts": "25000"
   }
 ]

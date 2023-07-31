@@ -40,7 +40,7 @@ jobs:
           fi
         
           # append stats to the CSV
-          TZ=UTC printf "%(%F %T)T, %d, %d\n" $EPOCHSECONDS $CURRENT_USERS $MAX_USERS >> ./nodes/$DOMAIN_NAME/stats.csv
+          TZ=UTC printf "%(%F %T)T, %d, %d\n" $EPOCHSECONDS $STORAGE_SLOTS_USED $MAX_USERS >> ./nodes/$DOMAIN_NAME/stats.csv
         done
 
         git add .

@@ -56,7 +56,7 @@
     "country": "Australia",
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
-    "storageSlotsUsed": "4959",
+    "storageSlotsUsed": "4960",
     "maxStorageSlots": "20000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "12735",
+    "storageSlotsUsed": "12736",
     "maxStorageSlots": "20000"
   },
   {
@@ -176,7 +176,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "19741",
+    "storageSlotsUsed": "19742",
     "maxStorageSlots": "25000"
   }
 ]

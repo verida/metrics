@@ -21,7 +21,7 @@ jobs:
         ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
 
         ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
-        ENDPOINTS=$ENDPOINTS:`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        ENDPOINTS=$ENDPOINT:$'\n':`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
 
         for ENDPOINT in $ENDPOINTS; 
         do

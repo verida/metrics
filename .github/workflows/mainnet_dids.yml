@@ -1,4 +1,4 @@
-name: Fetch latest testnet DID count
+name: Fetch latest mainnet DID count
 
 on:
   workflow_dispatch:

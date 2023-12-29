@@ -19,6 +19,10 @@ jobs:
         git pull
         ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/testnet.json`
         ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+
+        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
+        ENDPOINTS=$ENDPOINTS:`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+
         for ENDPOINT in $ENDPOINTS; 
         do
           ENDPOINT=`echo $ENDPOINT | sed -e 's:\"::g'` # remove quotes

@@ -41,7 +41,8 @@ async function run(): Promise<void> {
   try {
     // We assume all the latest data has been checked out via a git pull action
 
-    const networkName = "testnet";
+
+    for (const networkName of ["testnet", "mainnet"]) {
 
     // get the network description file
     let url = `https://assets.verida.io/registry/storageNodes/${networkName}.json`
@@ -99,6 +100,8 @@ async function run(): Promise<void> {
     }
 
     fs.writeFileSync(`../nodes/${networkName}-nodes-summary.json`, JSON.stringify(results, null, 2));
+    }
+
 
   } catch (error) {
     console.error(error);

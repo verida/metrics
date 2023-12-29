@@ -17,7 +17,7 @@ jobs:
     - name: Fetch and write data
       run: |-
         git pull
-        export ACTIVEDIDS=`curl https://data.verida.network/network/mainet/stats | jq .activeDIDs`
+        export ACTIVEDIDS=`curl https://data.verida.network/network/mainnet/stats | jq .activeDIDs`
         TZ=UTC printf "%(%F %T)T, %d\n" $EPOCHSECONDS $ACTIVEDIDS >> network/mainnet/stats.csv
     - name: Commit and push if it changed
       uses: stefanzweifel/git-auto-commit-action@v4

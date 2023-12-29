@@ -44,62 +44,62 @@ async function run(): Promise<void> {
 
     for (const networkName of ["testnet", "mainnet"]) {
 
-    // get the network description file
-    let url = `https://assets.verida.io/registry/storageNodes/${networkName}.json`
-    let response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Could not fetch ${url}`);
-    }
-    const storageNodes: NodeData[] = await response.json() as NodeData[];
-
-    // get region data
-    url = `https://assets.verida.io/registry/ISO-3166-Countries-with-Regional-Codes.json`
-    response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Could not fetch ${url}`);
-    }
-    const regionCodes: CountryRegion[] = await response.json() as unknown as CountryRegion[];
-
-    // convert to a map indexed by the 2-letter ISO code for a country
-    // eg
-    // AU: {name: Australia,..} 
-    const countryData = Object.fromEntries(
-      regionCodes.map((country) => [country["alpha-2"], country])
-    );
-
-    let domainRegEx = new RegExp('https:\\/\\/(.*):\\d*');
-
-    const results: NodeSummaryData[] = [];
-    for (const node of storageNodes) {
-      const nodeCountryData = countryData[node.countryLocation];
-
-      // need to get the stats for this node. These are all checked into this repo
-
-      // extract the domain name from the URL
-      const matches = node.serviceEndpoint.match(domainRegEx);
-      if (!matches) {
-        console.error(`could not extract domain name from ${node.serviceEndpoint}. Will not collect stats.`);
-      } else {
-        const rawNodeStats = fs.readFileSync(`../nodes/${matches[1]}/stats.csv`)
-        const nodeStats = parse(rawNodeStats, {columns: true, trim: true});
-        const mostRecentNodeStats = nodeStats.pop()
-
-        results.push({
-          id: node.id,
-          name: node.name,
-          description: node.description,
-          datacenter: node.datacenter,
-          serviceEndpoint: node.serviceEndpoint,
-          country: nodeCountryData["name"],
-          region: nodeCountryData["region"],
-          subregion: nodeCountryData["sub-region"],
-          storageSlotsUsed: mostRecentNodeStats['storage_slots_used'],
-          maxStorageSlots: mostRecentNodeStats['max_storage_slots'],
-        });
+      // get the network description file
+      let url = `https://assets.verida.io/registry/storageNodes/${networkName}.json`
+      let response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Could not fetch ${url}`);
       }
-    }
+      const storageNodes: NodeData[] = await response.json() as NodeData[];
 
-    fs.writeFileSync(`../nodes/${networkName}-nodes-summary.json`, JSON.stringify(results, null, 2));
+      // get region data
+      url = `https://assets.verida.io/registry/ISO-3166-Countries-with-Regional-Codes.json`
+      response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Could not fetch ${url}`);
+      }
+      const regionCodes: CountryRegion[] = await response.json() as unknown as CountryRegion[];
+
+      // convert to a map indexed by the 2-letter ISO code for a country
+      // eg
+      // AU: {name: Australia,..} 
+      const countryData = Object.fromEntries(
+        regionCodes.map((country) => [country["alpha-2"], country])
+      );
+
+      let domainRegEx = new RegExp('https:\\/\\/(.*):\\d*');
+
+      const results: NodeSummaryData[] = [];
+      for (const node of storageNodes) {
+        const nodeCountryData = countryData[node.countryLocation];
+
+        // need to get the stats for this node. These are all checked into this repo
+
+        // extract the domain name from the URL
+        const matches = node.serviceEndpoint.match(domainRegEx);
+        if (!matches) {
+          console.error(`could not extract domain name from ${node.serviceEndpoint}. Will not collect stats.`);
+        } else {
+          const rawNodeStats = fs.readFileSync(`../nodes/${matches[1]}/stats.csv`)
+          const nodeStats = parse(rawNodeStats, { columns: true, trim: true });
+          const mostRecentNodeStats = nodeStats.pop()
+
+          results.push({
+            id: node.id,
+            name: node.name,
+            description: node.description,
+            datacenter: node.datacenter,
+            serviceEndpoint: node.serviceEndpoint,
+            country: nodeCountryData["name"],
+            region: nodeCountryData["region"],
+            subregion: nodeCountryData["sub-region"],
+            storageSlotsUsed: mostRecentNodeStats['storage_slots_used'],
+            maxStorageSlots: mostRecentNodeStats['max_storage_slots'],
+          });
+        }
+      }
+
+      fs.writeFileSync(`../nodes/${networkName}-nodes-summary.json`, JSON.stringify(results, null, 2));
     }
 
 

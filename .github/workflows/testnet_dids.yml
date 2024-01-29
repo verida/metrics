@@ -3,7 +3,7 @@ name: Fetch latest testnet DID count
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '22 0/12 * * *'
+    - cron:  '27 */8 * * *'
 jobs:
   did-metrics:
     runs-on: ubuntu-latest

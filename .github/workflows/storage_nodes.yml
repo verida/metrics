@@ -1,9 +1,9 @@
-name: Fetch testnet storage node metrics
+name: Fetch storage node metrics
 
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '37 0/12 * * *'
+    - cron:  '37 */12 * * *'
 jobs:
   node-metrics:
     runs-on: ubuntu-latest
@@ -29,9 +29,9 @@ jobs:
         do
           ENDPOINT=`echo $ENDPOINT | sed -e 's:\"::g'` # remove quotes
           STRIPPED_FINAL_SLASH=`echo $ENDPOINT | sed 's/.$//'` # remove final slash
-          echo $STRIPPED_FINAL_SLASH
+          # echo $STRIPPED_FINAL_SLASH
           JSON=`curl --max-time 5 --silent "$STRIPPED_FINAL_SLASH/status"`
-          echo $JSON
+          # echo $JSON
           STORAGE_SLOTS_USED=`echo $JSON | jq .results.storageSlotsUsed`
           MAX_USERS=`echo $JSON | jq .results.maxStorageSlots`
         

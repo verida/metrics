@@ -3,7 +3,7 @@ name: Fetch latest mainnet DID count
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '22 */8 * * *'
+    - cron:  '22 */2 * * *'
 jobs:
   did-metrics:
     runs-on: ubuntu-latest

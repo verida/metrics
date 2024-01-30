@@ -3,7 +3,7 @@ name: Fetch storage node metrics
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '37 */12 * * *'
+    - cron:  '37 */2 * * *'
 jobs:
   node-metrics:
     runs-on: ubuntu-latest

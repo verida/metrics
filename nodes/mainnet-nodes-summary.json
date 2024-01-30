@@ -44,7 +44,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "19413",
+    "storageSlotsUsed": "19862",
     "maxStorageSlots": "25000"
   },
   {
@@ -56,7 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "20439",
+    "storageSlotsUsed": "20869",
     "maxStorageSlots": "25000"
   },
   {
@@ -68,7 +68,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "20457",
+    "storageSlotsUsed": "20930",
     "maxStorageSlots": "25000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "922",
+    "storageSlotsUsed": "1279",
     "maxStorageSlots": "25000"
   },
   {
@@ -92,7 +92,19 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "30",
+    "storageSlotsUsed": "358",
+    "maxStorageSlots": "25000"
+  },
+  {
+    "id": "verida-mainnet-azure-india-central-1-006",
+    "name": "Verida Foundation Mainnet: Central India Azure 006",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "azure-in-central-1",
+    "serviceEndpoint": "https://node6-centralindia.mnaz.verida.tech:443/",
+    "country": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "storageSlotsUsed": "397",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,23 +116,23 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "12698",
+    "storageSlotsUsed": "12867",
     "maxStorageSlots": "25000"
   },
   {
     "id": "verida-mainnet-azure-southeastasia-3-001",
     "name": "Verida Foundation Mainnet: SE Asia (Singapore) 002",
     "description": "Node operated by the Verida Foundation on Mainnet",
-    "datacenter": "azure-southeastasia-3",
+    "datacenter": "azure-southeastasia-1",
     "serviceEndpoint": "https://node2-southeastasia.mnaz.verida.tech:443/",
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "13838",
+    "storageSlotsUsed": "14017",
     "maxStorageSlots": "25000"
   },
   {
-    "id": "verida-mainnet-azure-southeastasia-3-002",
+    "id": "verida-mainnet-azure-southeastasia-3-003",
     "name": "Verida Foundation Mainnet: SE Asia (Singapore) 003",
     "description": "Node operated by the Verida Foundation on Mainnet",
     "datacenter": "azure-southeastasia-3",
@@ -128,7 +140,19 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "10451",
+    "storageSlotsUsed": "10643",
+    "maxStorageSlots": "25000"
+  },
+  {
+    "id": "verida-mainnet-azure-southeastasia-3-004",
+    "name": "Verida Foundation Mainnet: SE Asia (Singapore) 004",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "azure-southeastasia-1",
+    "serviceEndpoint": "https://node4-southeastasia.mnaz.verida.tech:443/",
+    "country": "Singapore",
+    "region": "Asia",
+    "subregion": "South-eastern Asia",
+    "storageSlotsUsed": "127",
     "maxStorageSlots": "25000"
   },
   {
@@ -140,7 +164,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3576",
+    "storageSlotsUsed": "3644",
     "maxStorageSlots": "25000"
   },
   {
@@ -152,7 +176,7 @@
     "country": "Germany",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3424",
+    "storageSlotsUsed": "3488",
     "maxStorageSlots": "25000"
   },
   {
@@ -164,7 +188,7 @@
     "country": "France",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3500",
+    "storageSlotsUsed": "3564",
     "maxStorageSlots": "25000"
   },
   {
@@ -176,7 +200,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2048",
+    "storageSlotsUsed": "2099",
     "maxStorageSlots": "25000"
   },
   {
@@ -188,7 +212,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "1993",
+    "storageSlotsUsed": "2029",
     "maxStorageSlots": "25000"
   },
   {
@@ -200,7 +224,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2071",
+    "storageSlotsUsed": "2105",
     "maxStorageSlots": "25000"
   }
 ]

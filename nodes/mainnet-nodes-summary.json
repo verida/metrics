@@ -36,6 +36,18 @@
     "maxStorageSlots": "80"
   },
   {
+    "id": "verida-mainnet-azure-india-central-1-001",
+    "name": "Verida Foundation Mainnet: Central India Azure 001",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "azure-in-central-1",
+    "serviceEndpoint": "https://node1-centralindia.mnaz.verida.tech:443/",
+    "country": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "storageSlotsUsed": "20771",
+    "maxStorageSlots": "25000"
+  },
+  {
     "id": "verida-mainnet-azure-india-central-1-002",
     "name": "Verida Foundation Mainnet: Central India Azure 002",
     "description": "Node operated by the Verida Foundation on Mainnet",
@@ -44,19 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "21740",
-    "maxStorageSlots": "25000"
-  },
-  {
-    "id": "verida-mainnet-azure-india-central-1-003",
-    "name": "Verida Foundation Mainnet: Central India Azure 003",
-    "description": "Node operated by the Verida Foundation on Mainnet",
-    "datacenter": "azure-in-central-3",
-    "serviceEndpoint": "https://node3-centralindia.mnaz.verida.tech:443/",
-    "country": "India",
-    "region": "Asia",
-    "subregion": "Southern Asia",
-    "storageSlotsUsed": "21958",
+    "storageSlotsUsed": "21744",
     "maxStorageSlots": "25000"
   },
   {
@@ -68,7 +68,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "2071",
+    "storageSlotsUsed": "2088",
     "maxStorageSlots": "25000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "1242",
+    "storageSlotsUsed": "1265",
     "maxStorageSlots": "25000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "1163",
+    "storageSlotsUsed": "1190",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "13451",
+    "storageSlotsUsed": "13471",
     "maxStorageSlots": "25000"
   },
   {
@@ -116,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "14620",
+    "storageSlotsUsed": "14633",
     "maxStorageSlots": "25000"
   },
   {
@@ -128,7 +128,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "11243",
+    "storageSlotsUsed": "11267",
     "maxStorageSlots": "25000"
   },
   {
@@ -140,7 +140,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "629",
+    "storageSlotsUsed": "647",
     "maxStorageSlots": "25000"
   },
   {
@@ -152,7 +152,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3913",
+    "storageSlotsUsed": "3922",
     "maxStorageSlots": "25000"
   },
   {
@@ -164,7 +164,7 @@
     "country": "Germany",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3774",
+    "storageSlotsUsed": "3779",
     "maxStorageSlots": "25000"
   },
   {
@@ -176,7 +176,7 @@
     "country": "France",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "3849",
+    "storageSlotsUsed": "3853",
     "maxStorageSlots": "25000"
   },
   {
@@ -188,7 +188,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2251",
+    "storageSlotsUsed": "2254",
     "maxStorageSlots": "25000"
   },
   {
@@ -212,7 +212,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2240",
+    "storageSlotsUsed": "2242",
     "maxStorageSlots": "25000"
   }
 ]

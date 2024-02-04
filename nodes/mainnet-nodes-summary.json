@@ -44,7 +44,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "21149",
+    "storageSlotsUsed": "21152",
     "maxStorageSlots": "25000"
   },
   {
@@ -56,7 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "22114",
+    "storageSlotsUsed": "22117",
     "maxStorageSlots": "25000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "2467",
+    "storageSlotsUsed": "2468",
     "maxStorageSlots": "25000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "1615",
+    "storageSlotsUsed": "1616",
     "maxStorageSlots": "25000"
   },
   {
@@ -108,18 +108,6 @@
     "maxStorageSlots": "25000"
   },
   {
-    "id": "verida-mainnet-azure-southeastasia-1-001",
-    "name": "Verida Foundation Mainnet: SE Asia (Singapore) 001",
-    "description": "Node operated by the Verida Foundation on Mainnet",
-    "datacenter": "azure-southeastasia-1",
-    "serviceEndpoint": "https://node1-southeastasia.mnaz.verida.tech:443/",
-    "country": "Singapore",
-    "region": "Asia",
-    "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "13789",
-    "maxStorageSlots": "25000"
-  },
-  {
     "id": "verida-mainnet-azure-southeastasia-3-002",
     "name": "Verida Foundation Mainnet: SE Asia (Singapore) 002",
     "description": "Node operated by the Verida Foundation on Mainnet",
@@ -128,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "14923",
+    "storageSlotsUsed": "14925",
     "maxStorageSlots": "25000"
   },
   {
@@ -152,7 +140,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "902",
+    "storageSlotsUsed": "904",
     "maxStorageSlots": "25000"
   },
   {

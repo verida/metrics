@@ -44,7 +44,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "21480",
+    "storageSlotsUsed": "21509",
     "maxStorageSlots": "25000"
   },
   {
@@ -56,7 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "22430",
+    "storageSlotsUsed": "22452",
     "maxStorageSlots": "25000"
   },
   {
@@ -68,7 +68,19 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "22646",
+    "storageSlotsUsed": "22683",
+    "maxStorageSlots": "25000"
+  },
+  {
+    "id": "verida-mainnet-azure-india-central-1-004",
+    "name": "Verida Foundation Mainnet: Central India Azure 004",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "azure-in-central-3",
+    "serviceEndpoint": "https://node4-centralindia.mnaz.verida.tech:443/",
+    "country": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "storageSlotsUsed": "2769",
     "maxStorageSlots": "25000"
   },
   {
@@ -80,7 +92,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "1864",
+    "storageSlotsUsed": "1878",
     "maxStorageSlots": "25000"
   },
   {
@@ -92,7 +104,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "1798",
+    "storageSlotsUsed": "1821",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "13993",
+    "storageSlotsUsed": "13997",
     "maxStorageSlots": "25000"
   },
   {
@@ -188,7 +200,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2422",
+    "storageSlotsUsed": "2426",
     "maxStorageSlots": "25000"
   },
   {
@@ -200,7 +212,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2331",
+    "storageSlotsUsed": "2335",
     "maxStorageSlots": "25000"
   },
   {
@@ -212,7 +224,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2372",
+    "storageSlotsUsed": "2376",
     "maxStorageSlots": "25000"
   }
 ]

@@ -80,7 +80,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "8253",
+    "storageSlotsUsed": "8255",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "7504",
+    "storageSlotsUsed": "7505",
     "maxStorageSlots": "25000"
   },
   {
@@ -116,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "17501",
+    "storageSlotsUsed": "17503",
     "maxStorageSlots": "25000"
   },
   {
@@ -128,7 +128,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "18573",
+    "storageSlotsUsed": "18576",
     "maxStorageSlots": "25000"
   },
   {
@@ -140,7 +140,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "16693",
+    "storageSlotsUsed": "16695",
     "maxStorageSlots": "25000"
   },
   {
@@ -152,7 +152,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "4487",
+    "storageSlotsUsed": "4488",
     "maxStorageSlots": "25000"
   },
   {
@@ -176,7 +176,7 @@
     "country": "Germany",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "5443",
+    "storageSlotsUsed": "5446",
     "maxStorageSlots": "25000"
   },
   {
@@ -200,7 +200,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2952",
+    "storageSlotsUsed": "2955",
     "maxStorageSlots": "25000"
   },
   {
@@ -212,7 +212,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2850",
+    "storageSlotsUsed": "2852",
     "maxStorageSlots": "25000"
   },
   {
@@ -224,7 +224,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "2905",
+    "storageSlotsUsed": "2910",
     "maxStorageSlots": "25000"
   }
 ]

@@ -17,13 +17,17 @@ jobs:
     - name: Fetch and write data
       run: |-
         git pull
-        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/testnet.json`
-        ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/testnet.json`
+        # ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
 
+        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
+        # # super careful with this next bit. We want the new line char!
+        # ENDPOINTS="$ENDPOINTS1
+        # "`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        
         ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
-        # super careful with this next bit. We want the new line char!
-        ENDPOINTS="$ENDPOINTS1
-        "`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        
 
         for ENDPOINT in $ENDPOINTS; 
         do

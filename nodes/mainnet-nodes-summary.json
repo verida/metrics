@@ -56,7 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "25064",
+    "storageSlotsUsed": "25072",
     "maxStorageSlots": "35000"
   },
   {
@@ -80,7 +80,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "11535",
+    "storageSlotsUsed": "11543",
     "maxStorageSlots": "25000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "8485",
+    "storageSlotsUsed": "8496",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "9802",
+    "storageSlotsUsed": "9813",
     "maxStorageSlots": "25000"
   },
   {
@@ -116,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "19472",
+    "storageSlotsUsed": "19482",
     "maxStorageSlots": "25000"
   },
   {
@@ -128,7 +128,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "20635",
+    "storageSlotsUsed": "20643",
     "maxStorageSlots": "25000"
   },
   {
@@ -140,7 +140,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "19163",
+    "storageSlotsUsed": "19167",
     "maxStorageSlots": "25000"
   },
   {
@@ -152,7 +152,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "6350",
+    "storageSlotsUsed": "6355",
     "maxStorageSlots": "25000"
   },
   {
@@ -164,7 +164,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "13",
+    "storageSlotsUsed": "17",
     "maxStorageSlots": "35000"
   },
   {
@@ -188,7 +188,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "8372",
+    "storageSlotsUsed": "8374",
     "maxStorageSlots": "25000"
   },
   {
@@ -200,7 +200,7 @@
     "country": "Germany",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "6297",
+    "storageSlotsUsed": "6299",
     "maxStorageSlots": "25000"
   },
   {
@@ -212,7 +212,7 @@
     "country": "France",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "7985",
+    "storageSlotsUsed": "7987",
     "maxStorageSlots": "25000"
   },
   {
@@ -260,7 +260,7 @@
     "country": "United Arab Emirates",
     "region": "Asia",
     "subregion": "Western Asia",
-    "storageSlotsUsed": "3",
+    "storageSlotsUsed": "8",
     "maxStorageSlots": "35000"
   },
   {
@@ -272,7 +272,7 @@
     "country": "United Arab Emirates",
     "region": "Asia",
     "subregion": "Western Asia",
-    "storageSlotsUsed": "3",
+    "storageSlotsUsed": "10",
     "maxStorageSlots": "35000"
   },
   {
@@ -284,7 +284,43 @@
     "country": "United Arab Emirates",
     "region": "Asia",
     "subregion": "Western Asia",
-    "storageSlotsUsed": "3",
+    "storageSlotsUsed": "5",
+    "maxStorageSlots": "35000"
+  },
+  {
+    "id": "node1-brazilsouth.mnaz.verida.tech",
+    "name": "Verida Foundation Mainnet: Brazil 1",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "Azure brazilsouth 3",
+    "serviceEndpoint": "https://node1-uaenorth.mnaz.verida.tech:443/",
+    "country": "Brazil",
+    "region": "Americas",
+    "subregion": "Latin America and the Caribbean",
+    "storageSlotsUsed": "8",
+    "maxStorageSlots": "35000"
+  },
+  {
+    "id": "node2-brazilsouth.mnaz.verida.tech",
+    "name": "Verida Foundation Mainnet: Brazil 2",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "Azure brazilsouth 2",
+    "serviceEndpoint": "https://node2-uaenorth.mnaz.verida.tech:443/",
+    "country": "Brazil",
+    "region": "Americas",
+    "subregion": "Latin America and the Caribbean",
+    "storageSlotsUsed": "10",
+    "maxStorageSlots": "35000"
+  },
+  {
+    "id": "node3-brazilsouth.mnaz.verida.tech",
+    "name": "Verida Foundation Mainnet: Brazil 3",
+    "description": "Node operated by the Verida Foundation on Mainnet",
+    "datacenter": "Azure brazilsouth 3",
+    "serviceEndpoint": "https://node3-uaenorth.mnaz.verida.tech:443/",
+    "country": "Brazil",
+    "region": "Americas",
+    "subregion": "Latin America and the Caribbean",
+    "storageSlotsUsed": "5",
     "maxStorageSlots": "35000"
   }
 ]

@@ -56,7 +56,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "25491",
+    "storageSlotsUsed": "25493",
     "maxStorageSlots": "35000"
   },
   {
@@ -68,7 +68,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "25108",
+    "storageSlotsUsed": "25112",
     "maxStorageSlots": "35000"
   },
   {
@@ -92,7 +92,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "8905",
+    "storageSlotsUsed": "8907",
     "maxStorageSlots": "25000"
   },
   {
@@ -104,7 +104,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "10400",
+    "storageSlotsUsed": "10404",
     "maxStorageSlots": "25000"
   },
   {
@@ -116,7 +116,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "19775",
+    "storageSlotsUsed": "19779",
     "maxStorageSlots": "35000"
   },
   {
@@ -128,7 +128,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "21266",
+    "storageSlotsUsed": "21267",
     "maxStorageSlots": "35000"
   },
   {
@@ -140,7 +140,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "19882",
+    "storageSlotsUsed": "19883",
     "maxStorageSlots": "35000"
   },
   {
@@ -152,7 +152,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "6986",
+    "storageSlotsUsed": "6987",
     "maxStorageSlots": "25000"
   },
   {
@@ -188,7 +188,7 @@
     "country": "Switzerland",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "9185",
+    "storageSlotsUsed": "9186",
     "maxStorageSlots": "25000"
   },
   {
@@ -200,7 +200,7 @@
     "country": "Germany",
     "region": "Europe",
     "subregion": "Western Europe",
-    "storageSlotsUsed": "7038",
+    "storageSlotsUsed": "7039",
     "maxStorageSlots": "25000"
   },
   {
@@ -248,7 +248,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "3792",
+    "storageSlotsUsed": "3793",
     "maxStorageSlots": "25000"
   },
   {
@@ -284,7 +284,7 @@
     "country": "United Arab Emirates",
     "region": "Asia",
     "subregion": "Western Asia",
-    "storageSlotsUsed": "246",
+    "storageSlotsUsed": "248",
     "maxStorageSlots": "35000"
   }
 ]

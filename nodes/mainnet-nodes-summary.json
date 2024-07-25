@@ -9,7 +9,7 @@
     "region": "Americas",
     "subregion": "Northern America",
     "storageSlotsUsed": "81",
-    "maxStorageSlots": "80"
+    "maxStorageSlots": "81"
   },
   {
     "id": "verida-mainnet-southeast-asia-001",
@@ -21,7 +21,7 @@
     "region": "Europe",
     "subregion": "Western Europe",
     "storageSlotsUsed": "83",
-    "maxStorageSlots": "80"
+    "maxStorageSlots": "83"
   },
   {
     "id": "verida-mainnet-southeast-australia-001",
@@ -33,7 +33,7 @@
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
     "storageSlotsUsed": "82",
-    "maxStorageSlots": "80"
+    "maxStorageSlots": "82"
   },
   {
     "id": "verida-mainnet-azure-india-central-1-001",
@@ -224,7 +224,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "3846",
+    "storageSlotsUsed": "3848",
     "maxStorageSlots": "25000"
   },
   {
@@ -236,7 +236,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "3728",
+    "storageSlotsUsed": "3730",
     "maxStorageSlots": "25000"
   },
   {
@@ -248,7 +248,7 @@
     "country": "United States of America",
     "region": "Americas",
     "subregion": "Northern America",
-    "storageSlotsUsed": "4267",
+    "storageSlotsUsed": "4269",
     "maxStorageSlots": "25000"
   },
   {

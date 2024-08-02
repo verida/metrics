@@ -14,22 +14,23 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v3
+
     - name: Fetch and write data
       run: |-
         git pull
-        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/testnet.json`
+        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/banksia.json`
         # ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
 
-        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
+        # ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/myrtle.json`
         # # super careful with this next bit. We want the new line char!
         # ENDPOINTS="$ENDPOINTS1
         # "`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
-        
-        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/mainnet.json`
-        ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
-        
 
-        for ENDPOINT in $ENDPOINTS; 
+        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/myrtle.json`
+        ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+
+
+        for ENDPOINT in $ENDPOINTS;
         do
           ENDPOINT=`echo $ENDPOINT | sed -e 's:\"::g'` # remove quotes
           STRIPPED_FINAL_SLASH=`echo $ENDPOINT | sed 's/.$//'` # remove final slash
@@ -38,17 +39,17 @@ jobs:
           # echo $JSON
           STORAGE_SLOTS_USED=`echo $JSON | jq .results.storageSlotsUsed`
           MAX_USERS=`echo $JSON | jq .results.maxStorageSlots`
-        
+
           DOMAIN_NAME=`echo $ENDPOINT | sed -E -e 's_.*://([^/@]*@)?([^/:]+).*_\2_'` # get the domainname
-        
+
           mkdir -p "./nodes/$DOMAIN_NAME"
-        
-        
+
+
           if [ ! -f "./nodes/$DOMAIN_NAME/stats.csv" ]; then
             # the CSV doesn't exist, so create it and add the header
             echo "datetime_utc,storage_slots_used,max_storage_slots" > "./nodes/$DOMAIN_NAME/stats.csv"
           fi
-        
+
           # append stats to the CSV
           TZ=UTC printf "%(%F %T)T, %d, %d\n" $EPOCHSECONDS $STORAGE_SLOTS_USED $MAX_USERS >> ./nodes/$DOMAIN_NAME/stats.csv
         done
@@ -59,15 +60,17 @@ jobs:
         node-version-file: '.nvmrc'
         cache: yarn
         cache-dependency-path: './mergestats/yarn.lock'
-        
+
     - name: Merge Node Stats
       run: |
         yarn install
         yarn build && yarn run process
         git add ../nodes/*.json
       working-directory: ./mergestats
+
     - name: Commit and push if it changed
       uses: stefanzweifel/git-auto-commit-action@v4
+
     - name: Upload to S3
       uses: shallwefootball/s3-upload-action@master
       with:
@@ -76,6 +79,7 @@ jobs:
           aws_bucket: ${{ secrets.AWS_BUCKET }}
           source_dir: 'nodes'
           destination_dir: 'metrics/nodes'
+
     - name: Invalidate Cloudfront
       uses: chetan/invalidate-cloudfront-action@v2
       env:

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "verida-banksia-azure-au-east-001",
+    "name": "Verida Foundation Banksia Testnet: Azure (Australia East) 001",
+    "description": "Node operated by the Verida Foundation on Banksia Testnet",
+    "datacenter": "azure-australiaeast",
+    "serviceEndpoint": "https://node1-australiaeast.az.banksia.verida.tech:443/",
+    "countryCode": "AU",
+    "country": "Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  {
+    "id": "verida-banksia-azure-fra-001",
+    "name": "Verida Foundation Banksia Testnet: Azure (Central France) 001",
+    "description": "Node operated by the Verida Foundation on Banksia Testnet",
+    "datacenter": "azure-centralfrance",
+    "serviceEndpoint": "https://node1-francecentral.az.banksia.verida.tech:443/",
+    "countryCode": "FR",
+    "country": "France",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  {
+    "id": "verida-banksia-azure-india-001",
+    "name": "Verida Foundation Banksia Testnet: Azure (Central India) 001",
+    "description": "Node operated by the Verida Foundation on Banksia Testnet",
+    "datacenter": "azure-centralindia",
+    "serviceEndpoint": "https://node1-centralindia.az.banksia.verida.tech:443/",
+    "countryCode": "IN",
+    "country": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  {
+    "id": "verida-banksia-azure-eastus2-001",
+    "name": "Verida Foundation Banksia Testnet: Azure (East US 2) 001",
+    "description": "Node operated by the Verida Foundation on Banksia Testnet",
+    "datacenter": "azure-eastus2",
+    "serviceEndpoint": "https://node1-eastus2.az.banksia.verida.tech:443/",
+    "countryCode": "US",
+    "country": "United States of America",
+    "region": "Americas",
+    "subregion": "Northern America"
+  }
+]

@@ -1,4 +1,4 @@
-name: Fetch latest mainnet DID count
+name: Fetch latest Polygon mainnet DID count
 
 on:
   workflow_dispatch:
@@ -14,26 +14,30 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v3
+
     - name: Fetch and write data
       run: |-
         git pull
-        export ACTIVEDIDS=`curl https://data.verida.network/network/mainnet/stats | jq .activeDIDs`
-        TZ=UTC printf "%(%F %T)T, %d\n" $EPOCHSECONDS $ACTIVEDIDS >> network/mainnet/stats.csv
+        export ACTIVEDIDS=`curl https://data.verida.network/network/polpos/stats | jq .activeDIDs`
+        TZ=UTC printf "%(%F %T)T, %d\n" $EPOCHSECONDS $ACTIVEDIDS >> identities/polpos/stats.csv
+
     - name: Commit and push if it changed
       uses: stefanzweifel/git-auto-commit-action@v4
+
     - name: Upload to S3
       uses: shallwefootball/s3-upload-action@master
       with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: 'network/mainnet'
-          destination_dir: 'metrics/network/mainnet'
+          source_dir: 'identities/polpos'
+          destination_dir: 'metrics/identities/polpos'
+
     - name: Invalidate Cloudfront
       uses: chetan/invalidate-cloudfront-action@v2
       env:
         DISTRIBUTION: "E3LHLBYD4D78TS"
-        PATHS: '/metrics/network/mainnet/*'
+        PATHS: '/metrics/identities/polpos/*'
         AWS_REGION: 'us-west-2'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}

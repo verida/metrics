@@ -10,6 +10,7 @@ type NodeData = {
   establishmentDate: string;
   countryLocation: string;
 };
+
 type CountryRegion = {
   name: string;
   "alpha-2": string;
@@ -23,18 +24,26 @@ type CountryRegion = {
   "sub-region-code": number;
   "intermediate-region-code": number;
 };
+
 type NodeSummaryData = {
   id: string;
   name: string;
   description: string;
   datacenter: string;
   serviceEndpoint: string;
+  countryCode: string;
   country: string;
   region: string;
   subregion: string;
-  storageSlotsUsed: number;
-  maxStorageSlots: number;
+  storageSlotsUsed?: number;
+  maxStorageSlots?: number;
 };
+
+type NodeStats = {
+  datetime_utc: string
+  storage_slots_used: number,
+  max_storage_slots: number
+}
 
 
 async function run(): Promise<void> {
@@ -42,27 +51,31 @@ async function run(): Promise<void> {
     // We assume all the latest data has been checked out via a git pull action
 
 
-    for (const networkName of ["testnet", "mainnet"]) {
+    for (const networkName of ["myrtle", "banksia"]) {
 
       // get the network description file
-      let url = `https://assets.verida.io/registry/storageNodes/${networkName}.json`
-      let response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`Could not fetch ${url}`);
+      const nodeRegistryUrl = `https://assets.verida.io/registry/storageNodes/${networkName}.json`
+
+      const nodeRegistryResponse = await fetch(nodeRegistryUrl);
+      if (!nodeRegistryResponse.ok) {
+        throw new Error(`Could not fetch ${nodeRegistryUrl}`);
       }
-      const storageNodes: NodeData[] = await response.json() as NodeData[];
+
+      const storageNodes: NodeData[] = await nodeRegistryResponse.json() as NodeData[];
 
       // get region data
-      url = `https://assets.verida.io/registry/ISO-3166-Countries-with-Regional-Codes.json`
-      response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`Could not fetch ${url}`);
+      const contriesDetailsUrl = `https://assets.verida.io/registry/ISO-3166-Countries-with-Regional-Codes.json`
+
+      const contriesDetailsResponse = await fetch(contriesDetailsUrl);
+      if (!contriesDetailsResponse.ok) {
+        throw new Error(`Could not fetch ${contriesDetailsUrl}`);
       }
-      const regionCodes: CountryRegion[] = await response.json() as unknown as CountryRegion[];
+
+      const regionCodes: CountryRegion[] = await contriesDetailsResponse.json() as unknown as CountryRegion[];
 
       // convert to a map indexed by the 2-letter ISO code for a country
       // eg
-      // AU: {name: Australia,..} 
+      // AU: {name: Australia,..}
       const countryData = Object.fromEntries(
         regionCodes.map((country) => [country["alpha-2"], country])
       );
@@ -80,9 +93,14 @@ async function run(): Promise<void> {
         if (!matches) {
           console.error(`could not extract domain name from ${node.serviceEndpoint}. Will not collect stats.`);
         } else {
-          const rawNodeStats = fs.readFileSync(`../nodes/${matches[1]}/stats.csv`)
-          const nodeStats = parse(rawNodeStats, { columns: true, trim: true });
-          const mostRecentNodeStats = nodeStats.pop()
+          let mostRecentNodeStats: NodeStats | undefined = undefined
+          try {
+            const rawNodeStats = fs.readFileSync(`../nodes/${matches[1]}/stats.csv`)
+            const nodeStats = parse(rawNodeStats, { columns: true, trim: true }) as NodeStats[];
+            mostRecentNodeStats = nodeStats.pop()
+          } catch (error) {
+            console.error(error);
+          }
 
           results.push({
             id: node.id,
@@ -90,11 +108,12 @@ async function run(): Promise<void> {
             description: node.description,
             datacenter: node.datacenter,
             serviceEndpoint: node.serviceEndpoint,
+            countryCode: node.countryLocation,
             country: nodeCountryData["name"],
             region: nodeCountryData["region"],
             subregion: nodeCountryData["sub-region"],
-            storageSlotsUsed: mostRecentNodeStats['storage_slots_used'],
-            maxStorageSlots: mostRecentNodeStats['max_storage_slots'],
+            storageSlotsUsed: mostRecentNodeStats?.storage_slots_used,
+            maxStorageSlots: mostRecentNodeStats?.max_storage_slots,
           });
         }
       }

@@ -8,7 +8,9 @@
     "countryCode": "AU",
     "country": "Australia",
     "region": "Oceania",
-    "subregion": "Australia and New Zealand"
+    "subregion": "Australia and New Zealand",
+    "storageSlotsUsed": "25",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-banksia-azure-fra-001",
@@ -19,7 +21,9 @@
     "countryCode": "FR",
     "country": "France",
     "region": "Europe",
-    "subregion": "Western Europe"
+    "subregion": "Western Europe",
+    "storageSlotsUsed": "21",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-banksia-azure-india-001",
@@ -30,7 +34,9 @@
     "countryCode": "IN",
     "country": "India",
     "region": "Asia",
-    "subregion": "Southern Asia"
+    "subregion": "Southern Asia",
+    "storageSlotsUsed": "16",
+    "maxStorageSlots": "25000"
   },
   {
     "id": "verida-banksia-azure-eastus2-001",
@@ -41,6 +47,8 @@
     "countryCode": "US",
     "country": "United States of America",
     "region": "Americas",
-    "subregion": "Northern America"
+    "subregion": "Northern America",
+    "storageSlotsUsed": "19",
+    "maxStorageSlots": "25000"
   }
 ]

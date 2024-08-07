@@ -18,15 +18,19 @@ jobs:
     - name: Fetch and write data
       run: |-
         git pull
-        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/banksia.json`
-        ENDPOINTS=`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        # Get Banksia registry file
+        BANKSIA_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/banksia.json`
+        # Extract Banksia node endpoints
+        BANKSIA_ENDPOINTS=`echo $BANKSIA_JSON |  jq ".[] .serviceEndpoint"`
 
-        ENDPOINTS_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/myrtle.json`
+        # Get Myrtle registry file
+        MYRTLE_JSON=`curl --max-time 5 --silent https://assets.verida.io/registry/storageNodes/myrtle.json`
+        # Extract Myrtle node endpoints and append them with the Banksia ones into an ALL_ENDPOINTS variable
         # super careful with this next bit. We want the new line char!
-        ENDPOINTS="$ENDPOINTS1
-        "`echo $ENDPOINTS_JSON |  jq ".[] .serviceEndpoint"`
+        ALL_ENDPOINTS="$BANKSIA_ENDPOINTS
+        "`echo $MYRTLE_JSON |  jq ".[] .serviceEndpoint"`
 
-        for ENDPOINT in $ENDPOINTS;
+        for ENDPOINT in $ALL_ENDPOINTS;
         do
           ENDPOINT=`echo $ENDPOINT | sed -e 's:\"::g'` # remove quotes
           STRIPPED_FINAL_SLASH=`echo $ENDPOINT | sed 's/.$//'` # remove final slash
@@ -36,7 +40,7 @@ jobs:
           STORAGE_SLOTS_USED=`echo $JSON | jq .results.storageSlotsUsed`
           MAX_USERS=`echo $JSON | jq .results.maxStorageSlots`
 
-          DOMAIN_NAME=`echo $ENDPOINT | sed -E -e 's_.*://([^/@]*@)?([^/:]+).*_\2_'` # get the domainname
+          DOMAIN_NAME=`echo $ENDPOINT | sed -E -e 's_.*://([^/@]*@)?([^/:]+).*_\2_'` # get the domain name
 
           mkdir -p "./nodes/$DOMAIN_NAME"
 

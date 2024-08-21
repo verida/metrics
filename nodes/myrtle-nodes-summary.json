@@ -36,7 +36,7 @@
     "region": "Oceania",
     "subregion": "Australia and New Zealand",
     "storageSlotsUsed": "83",
-    "maxStorageSlots": "90"
+    "maxStorageSlots": "83"
   },
   {
     "id": "verida-mainnet-azure-india-central-1-001",
@@ -48,7 +48,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "27325",
+    "storageSlotsUsed": "27326",
     "maxStorageSlots": "35000"
   },
   {
@@ -87,7 +87,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "14101",
+    "storageSlotsUsed": "14102",
     "maxStorageSlots": "25000"
   },
   {
@@ -165,7 +165,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "8598",
+    "storageSlotsUsed": "8599",
     "maxStorageSlots": "25000"
   },
   {

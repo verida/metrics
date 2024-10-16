@@ -74,7 +74,7 @@
     "country": "India",
     "region": "Asia",
     "subregion": "Southern Asia",
-    "storageSlotsUsed": "27051",
+    "storageSlotsUsed": "27053",
     "maxStorageSlots": "35000"
   },
   {
@@ -178,7 +178,7 @@
     "country": "Singapore",
     "region": "Asia",
     "subregion": "South-eastern Asia",
-    "storageSlotsUsed": "1407",
+    "storageSlotsUsed": "1409",
     "maxStorageSlots": "35000"
   },
   {
@@ -308,7 +308,7 @@
     "country": "United Arab Emirates",
     "region": "Asia",
     "subregion": "Western Asia",
-    "storageSlotsUsed": "1602",
+    "storageSlotsUsed": "1604",
     "maxStorageSlots": "35000"
   }
 ]

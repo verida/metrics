@@ -3,7 +3,7 @@ name: Fetch latest Polygon mainnet DID count
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '22 */2 * * *'
+    - cron:  '20 */2 * * *'
 jobs:
   did-metrics:
     runs-on: ubuntu-latest
